@@ -37,7 +37,6 @@ export class NavbarComponent implements OnInit {
           .forEach((element: any) => {
             element = this.titleCasePipe.transform(element);
             if (element === '' || element === 'Home') {
-              console.log(this.navigationPath.nativeElement.childNodes);
               if (this.navigationPath.nativeElement.childNodes.length >= 2) {
                 this.navigationPath.nativeElement.childNodes.forEach(
                   (element: any) => {
