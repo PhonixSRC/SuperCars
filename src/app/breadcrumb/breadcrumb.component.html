@@ -1,0 +1,12 @@
+<p>breadcrumb works!</p>
+
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item" *ngFor="let item of breadcrumbItems; let last = last">
+      <a *ngIf="item.route" [routerLink]="item.route">{{ item.label }}</a>
+      <span *ngIf="!item.route">{{ item.label }}</span>
+      <span class="divider" *ngIf="!last">/</span>
+    </li>
+  </ol>
+</nav>

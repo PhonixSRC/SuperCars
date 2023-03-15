@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home/home.component';
 import { ContactComponent } from './contact/contact.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
     NavbarComponent,
     HomeComponent,
     ContactComponent,
+    BreadcrumbComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
